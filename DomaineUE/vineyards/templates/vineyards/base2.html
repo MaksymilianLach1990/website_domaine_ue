@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} Base {% endblock %}</title>
+
+</head>
+
+<body>
+    <div class='naglowek'>
+        <div>
+            <h1><strong></strong>Witamy na stronie DOMAINE.UE</strong></h1>
+        </div>
+
+    </div>
+    <div class='menu'>
+        <ul>
+            
+            <h3><strong>Information about my site:</strong></h3>
+            <li><a href="/domaine/">Home</a></li>
+            <li><a href="/domaine/vineyards">Vineyards</a></li>
+            <li><a href="/domaine/work">Work</a></li>
+            <li><a href="/domaine/vintage">Vintage</a></li>
+            <li><a href="/domaine/domains_list">Lista winnic</a></li>
+            
+            <h3><strong>For travel and for work:</strong></h3>
+            <li><a href="/domaine/jobs/registration">Registration</a></li>
+            <li><a href="/domaine/jobs/conditions">Conditions</a></li>
+            <li><a href="/domaine/jobs/for_employers">For Domaines</a></li>
+            <li><a href="/domaine/jobs/for_workers">For workers</a></li>
+            <li><a href="/domaine/jobs/jobs">Jobs</a></li>
+
+            <h3><strong>Maps:</strong></h3>
+            <li><a href="/domaine/maps/weather">Weather in France</a></li>
+            <li><a href="/domaine/maps/points">Domaines and Campings</a></li>
+            <li><a href="/domaine/maps/date_vintage">Date vintage</a></li>
+
+            <li><a href="/domaine/contact">Contact</a></li>
+            
+
+        </ul>
+    </div>
+
+
+    <div class='website'>
+
+        {% block content %}
+        
+        {% endblock %}    
+        
+    </div>
+</body>
+
+</html>
