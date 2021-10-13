@@ -1,150 +1,151 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <title>{% block title%} Home {% endblock%}</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="/domaine/">
-                <h1><strong>Witamy na stronie DOMAINE.UE</strong></h1>
-                
-            </a>
-            </div>
-        </nav>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <div class="row">
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                    <div class="position-sticky pt-3">
-                        <ul class="nav flex-column">
-                            <h6><strong>Information about my site</strong></h6>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/domaine/">
-                                <span data-feather="home"></span>
-                                Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/domaine/vineyards">
-                                <span data-feather="file"></span>
-                                Vineyards
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/work">
-                                <span data-feather="shopping-cart"></span>
-                                Work
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/vintage">
-                                <span data-feather="users"></span>
-                                Vintage
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/domains_list">
-                                <span data-feather="bar-chart-2"></span>
-                                Domaines List
-                            </a>
-                            </li>
-                            <h6><strong>For travel and for work:</strong></h6>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/jobs/registration">
-                                <span data-feather="layers"></span>
-                                Registration
-                            </a>
-                            </li>
-                        </ul>
-                        <ul class="nav flex-column mb-2">
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/jobs/conditions">
-                                <span data-feather="file-text"></span>
-                                Conditions
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/jobs/for_employers">
-                                <span data-feather="file-text"></span>
-                                For Domaines
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/jobs/for_workers">
-                                <span data-feather="file-text"></span>
-                                For Workers
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/domaine/jobs/jobs">
-                                <span data-feather="file-text"></span>
-                                Jobs
-                            </a>
-                            </li>
-                            <h6><strong>Maps:</strong></h6>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/domaine/maps/weather">
-                                <span data-feather="file-text"></span>
-                                Weather in France
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/domaine/maps/points">
-                                <span data-feather="file-text"></span>
-                                Domaines and Campings
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/domaine/maps/date_vintage">
-                                <span data-feather="file-text"></span>
-                                Date vintage
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/domaine/contact">
-                                    <span data-feather="file-text"></span>
-                                    <strong>
-                                    Contact
-                                    </strong>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>                 
-            </div>
-        </div>
-    
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div>
-                {% block content %}
-                
-                {% endblock %}
-            </div>
-        
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <ul>
-                    <h3>Wypełnienie strony.</h3>  
-                </ul>
-            </div>
-        </main>
+          <a class="navbar-brand" href="/domaine/">
+            <h1><strong>Witamy na stronie DOMAINE.UE</strong></h1>
             
-        
-        <!-- Optional JavaScript; choose one of the two! -->
-        
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          </a>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                  <h6><strong>Information about my site</strong></h6>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/domaine/">
+                    <span data-feather="home"></span>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/vineyards">
+                    <span data-feather="file"></span>
+                    Vineyards
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/work">
+                    <span data-feather="shopping-cart"></span>
+                    Work
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/vintage">
+                    <span data-feather="users"></span>
+                    Vintage
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/domains_list">
+                    <span data-feather="bar-chart-2"></span>
+                    Domaines List
+                  </a>
+                </li>
+                <h6><strong>For travel and for work:</strong></h6>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/jobs/registration">
+                    <span data-feather="layers"></span>
+                    Registration
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/jobs/conditions">
+                    <span data-feather="file-text"></span>
+                    Conditions
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/jobs/for_employers">
+                    <span data-feather="file-text"></span>
+                    For Domaines
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/jobs/for_workers">
+                    <span data-feather="file-text"></span>
+                    For Workers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/domaine/jobs/jobs">
+                    <span data-feather="file-text"></span>
+                    Jobs
+                  </a>
+                </li>
+                <h6><strong>Maps:</strong></h6>
+                <li class="nav-item">
+                    <a class="nav-link" href="/domaine/maps/weather">
+                      <span data-feather="file-text"></span>
+                      Weather in France
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/domaine/maps/points">
+                      <span data-feather="file-text"></span>
+                      Domaines and Campings
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/domaine/maps/date_vintage">
+                      <span data-feather="file-text"></span>
+                      Date vintage
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/domaine/contact">
+                      <span data-feather="file-text"></span>
+                      Contact
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+      
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    
+    <div class="bd-example">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text></svg>
 
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        -->
-    </body>
+    </div>
+
+    <div>
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <ul>
+          <h3>Wypełnienie strony.</h3>  
+        </ul>
+    </div>
+</main>
+    
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
