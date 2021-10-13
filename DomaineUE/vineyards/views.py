@@ -34,7 +34,10 @@ def work(response):
     return render(response, "vineyards/work.html", {})
 
 def spring_season(response):
-    return render(response, "vineyards/spring_season.html", {}) 
+    return render(response, "vineyards/spring_season.html", {})
+
+def summer_season(response):
+    return render(response, "vineyards/summer_season.html", {}) 
 
 def winter_season(response):
     return render(response, "vineyards/winter_season.html", {})

@@ -9,6 +9,7 @@ urlpatterns = [
     path('<int:id>/', views.domaine_detals, name='domaine detals'),
     path('work/', views.work, name='work'),
     path('spring_season', views.spring_season, name='spring season'),
+    path('summer_season', views.summer_season, name='summer season'),
     path('winter_season/', views.winter_season, name='winter season'),
     path('vintage/', views.vintage, name='vintage'),
     path('contact/', views.contact, name='contact')
