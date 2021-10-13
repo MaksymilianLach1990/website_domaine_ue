@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import response
 from .models import Domaine, Item
+from .forms import CreateNewDomaine
 # Create your views here.
 
 def home(response):
@@ -12,14 +13,18 @@ def vineyards(response):
 
 def domains_list(response):
     domaine = Domaine.objects.all()
-    indexy = []
-    for item in domaine:
-        if item.id % 2 == 0:
-            indexy.append(0)
-        else:
-            indexy.append(1)
+    if response.method == "POST":
+        new_domaine = CreateNewDomaine(response.POST)
 
-    return render(response, "vineyards/domains_list.html", {"domaine":domaine, "index": indexy}) 
+        if new_domaine.is_valid():
+            n = new_domaine.cleaned_data["name"]
+            d = Domaine(name=n)
+            d.save()
+        
+        return render(response, "vineyards/domains_list.html", {"domaine":domaine, "new_domaine":new_domaine}) 
+    else:
+        new_domaine = CreateNewDomaine()
+        return render(response, "vineyards/domains_list.html", {"domaine":domaine, "new_domaine":new_domaine}) 
 
 def domaine_detals(response, id):
     domaine = Domaine.objects.get(id=id)

@@ -6,6 +6,14 @@
 <h1>Tu znajdziesz listę zarejestrowanych winnic.</h1>
 
 
+<form method="post" action="/domaine/domains_list/">
+  {% csrf_token %}
+  <h2>Dodaj winnicę</h2>
+  <h4>Prosimy wypełnić formularz poniżej.</h4>
+  {{ new_domaine.as_p }}
+  <button type="submit", name="save">Create</button>
+</form>
+
 <hr class="featurette-divider">
 
 <div class="row featurette">
