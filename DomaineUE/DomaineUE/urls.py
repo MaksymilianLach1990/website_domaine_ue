@@ -22,6 +22,5 @@ urlpatterns = [
     path('domaine/maps/', include('maps.urls')),
     path('domaine/jobs/', include('takejob.urls')),
     
-    
     path('admin/', admin.site.urls),
 ]

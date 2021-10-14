@@ -1,7 +1,24 @@
 {% extends "vineyards/base.html" %} 
 
-{% block title %} Vineyards {% endblock %}
+{% block title %} Contact {% endblock %}
 
 {% block content %} 
 <h1>Jeśli chcesz sie z nami skontaktować, wypełnij formularz poniżej.</h1>
+<div>
+    <h1>Dane kontaktowe do nas:</h1>
+    <ul>
+        <li>Adres:</li><br>
+        <li>Numer telefonu:</li><br>
+        <li>Email:</li><br>
+    </ul>
+</div>
+
+<div>
+    <form method="post" action="/domaine/contact/">
+        {% csrf_token %}
+        <h4>Prosimy wypełnić formularz poniżej.</h4>
+        {{ new_message.as_p }}
+        <button type="submit", name="save">Create</button>
+      </form>
+</div>
 {% endblock %}
