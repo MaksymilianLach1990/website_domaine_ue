@@ -1,7 +1,27 @@
 {% extends "vineyards/base.html" %} 
-
+{% load static %}
 {% block title %} Home {% endblock %}
 
 {% block content %} 
-<h1>Witamy na stronie domowej.</h1>
+<div class="naglowek">
+    <h1>Witaj, rozsiąć się wygodnie i pozwól się wciągnąć lekturze</h1>
+</div>
+<hr>
+<br>
+<div>
+    <p>Powitanie</p>
+</div>
+<hr>
+<br>
+<div>
+    <p>Przedstawienie się</p>
+</div>
+<hr>
+<br>
+<div>
+    <p>Krótki opis kim jesteśmy</p>
+</div>
+<img src="{% static 'vineyards/image/tło_kieliszek.jpg' %}" alt="Obrazek">
+
+
 {% endblock %}
