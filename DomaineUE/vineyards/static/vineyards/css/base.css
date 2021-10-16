@@ -1,0 +1,22 @@
+body {
+    color: black;
+    
+}
+
+footer {
+    text-align: center; 
+    font-size: 20px; 
+    color: darkred;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.naglowek {
+    font-size: 20px;
+    text-align: center;
+}
+
+

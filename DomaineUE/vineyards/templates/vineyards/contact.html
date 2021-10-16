@@ -7,9 +7,9 @@
 <div>
     <h1>Dane kontaktowe do nas:</h1>
     <ul>
-        <li>Adres:</li><br>
-        <li>Numer telefonu:</li><br>
-        <li>Email:</li><br>
+        <li>Adres: <strong> Madagaskar ul. Lemura 14</strong></li><br>
+        <li>Numer telefonu: <strong>669 777 155</strong></li><br>
+        <li>Email: <strong>domaine.ue@gmail.com</strong></li><br>
     </ul>
 </div>
 
@@ -18,7 +18,7 @@
         {% csrf_token %}
         <h4>Prosimy wypełnić formularz poniżej.</h4>
         {{ new_message.as_p }}
-        <button type="submit", name="save">Create</button>
+        <button type="submit", name="save">Send</button>
       </form>
 </div>
 {% endblock %}
